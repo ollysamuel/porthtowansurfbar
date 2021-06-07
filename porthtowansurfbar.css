@@ -1,25 +1,36 @@
 :root {
-  font-size: 10px;
+  font-size: 1vw;
   font-family: sans-serif;
 }
 
 @media (min-width: 800px) {
   
   body {
-    max-width: 1024px;
+    max-width: 1280px;
     margin: auto;
+  }
+  
+  .title {
+    font-size: 3vw !important;
   }
   
   .center {
     display: flex;
     justify-contents: center;
-    margin-top: 5em;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #header {
+    height: 100vh;
   }
   
   #header-img {
-    max-width: 50%;
+    width: 100vw;
+    max-width: 70vh;
     height: auto;
-    margin: auto;
+    margin-top: 7em;
   }  
   
   #nav-bar {
@@ -54,12 +65,12 @@
       border: ;
       color: black;
       font-weight: 700;
+     transition: color 0.3s;
       border-radius: 5px;
     }
   
   li a:hover {
-    background-color: rgba(53,156,181, 0.1);
-    font-weight: 900;
+   color: grey;
   }
   
   li a:visited{
@@ -67,7 +78,7 @@
   }
   
   li a:active {
-    font-weight: 900;
+    color: grey;
   }
   
   h1 {
